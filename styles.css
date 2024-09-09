@@ -417,7 +417,8 @@ body {
         font-size: 3rem;
     }
     .image-container img {
-        max-width: 100%;
+        mdisplay: block;
+    flex-direction: column;
     }
 }
 
