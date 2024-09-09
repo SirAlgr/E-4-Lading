@@ -439,8 +439,7 @@ body {
 }
 @media (max-width: 428px) {
    .cta-button {
-    display: block;
-    flex-direction: column;
+    display: none !important; 
     }
 }
 @media (max-width: 428px) {
