@@ -435,7 +435,7 @@ body {
         display: none;
     }
 }
-@media (max-width: 678px) {
+@media (max-width: 428px) {
    .cta-button {
     display: block;
     flex-direction: column;
@@ -443,6 +443,7 @@ body {
 }
 @media (max-width: 428px) {
     .info-button{
-         display: none;
+        display: block;
+        flex-direction: column;
      }
  }
