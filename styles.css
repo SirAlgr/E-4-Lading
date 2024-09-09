@@ -426,7 +426,8 @@ body {
         font-size: 2rem;
     }
     .image-container img {
-        max-width: 100%;
+        display: block;
+        flex-direction: column;
     }
 }
 
