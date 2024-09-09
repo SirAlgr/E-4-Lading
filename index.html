@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Que Pais</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <body>
+    <header>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='#'><img src='QUE-PAIS.png'/></a></li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="#Inicio">INICIO</a></li>
+            <li><a href="#contact">CONTACTO</a></li>
+            <li><a href="#info">SOBRE NOSOTROS</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="text-container">
+                <h1>Bienvenido a Que País</h1>
+                <p>Que País es un espacio dedicado a compartir lo más interesante y curioso de Argentina. Desde sus paisajes únicos y su rica historia, hasta su cultura vibrante y personajes inolvidables, celebramos todo lo que hace especial a nuestro país.</p>
+                <p>&nbsp;<p>
+                </p><div class="buttons">
+                    <a href="https://www.quepais.com.ar" class="cta-button">BLOG ARGENTINA</a>
+                    <a href="#info" class="info-button">MÁS INFORMACIÓN</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Que Pais.png" alt="Imagen de Argentina">
+            </div>
+        </div>
+    </div></main>
+    <div id="info" class="info-section">
+        <h2>BREVE INFORMACIÓN</h2>
+        <p>Nos enfocamos en destacar aquellos aspectos que forman la identidad argentina, combinando datos fascinantes, humor local y orgullo nacional para ofrecer una experiencia que resalta lo mejor de nuestra tierra.</p>
+    </div>
+    <section class="cards-section">
+        <h2>Descubre Argentina</h2>
+        
+        <div class="cards-container">
+            <div class="card">
+                <img src="Paisajes.webp" alt="Paisajes de Argentina">
+                <h3>Paisajes Increíbles</h3>
+                <p>Desde la Patagonia hasta las Cataratas del Iguazú, Argentina es hogar de paisajes impresionantes y biodiversidad única.</p>
+                <a href="https://www.quepais.com.ar" class="btn-card">Ver más</a>
+            </div>
+    
+            <div class="card">
+                <img src="Cultura.webp" alt="Cultura Argentina">
+                <h3>Cultura Vibrante</h3>
+                <p>Con una rica herencia cultural, el tango, el fútbol y sus festivales, Argentina ofrece una experiencia vibrante y diversa.</p>
+                <a href="https://www.quepais.com.ar/search/label/Argentina?&max-results=5" class="btn-card">Ver más</a>
+            </div>
+    
+            <div class="card">
+                <img src="Historia.webp" alt="Historia de Argentina">
+                <h3>Historia Fascinante</h3>
+                <p>Explora la historia de Argentina, desde su independencia hasta los eventos que han moldeado la nación moderna.</p>
+                <a href="https://www.quepais.com.ar/search/label/Historias?&max-results=5" class="btn-card">Ver más</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <h2>Contáctanos</h2>
+        <p>Si tienes alguna pregunta o deseas obtener más información, no dudes en contactarnos a través del siguiente formulario.</p>
+        <div class="contact-container">
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+    
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+    
+            <div class="contact-info">
+                <h3>Otras formas de contacto</h3>
+                <p><strong>Email:</strong> contacto@quepais.com</p>
+                <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+                <p><strong>Dirección:</strong> Buenos Aires, Argentina</p>
+            </div>
+        </div>
+    </section>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="QUE-PAIS.png" alt="Logo Que País">
+    </div>
+        <div class="footer-info"> 
+            <p><strong>Email:</strong> contacto@quepais.com</p>
+            <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+    </div>
+        <div class="footer-social">
+            <h3>REDES SOCIALES</h3>
+            <a href="#" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="Instagram.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Que País. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</html>

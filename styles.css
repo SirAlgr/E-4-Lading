@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    --color1: #75aadb ;
+    --color2: #fff;
+}
+
+/* Sección Nav-Bar */
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 12px 20px;
+}
+.logo img {width: 150px;}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+/* Sección Hero */
+.hero-section {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.hero-content {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.text-container {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.text-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    flex: 1;
+    text-align: right;
+}
+
+.image-container img {
+    max-width: 60%;
+    height: auto;
+}
+
+.buttons {
+    margin-top: 20px;  
+    height: auto; 
+}
+
+.cta-button{
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+    background-color: #75aadb;
+    border-radius: 20px;
+}
+.info-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;        
+}
+
+.cta-button:hover{
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+    background-color: #fcbf45;
+}
+
+.info-button:hover {
+    background-color: #ffffff;
+}
+
+/* Sección de información */
+.info-section {
+    font-family: 'Inter', sans-serif;
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+/* Sección Cards */
+
+.cards-section {
+    font-family: 'Inter', sans-serif;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.cards-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Contenedor de las tarjetas */
+.cards-container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilo individual de cada tarjeta */
+.card {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+/* Imagen en la tarjeta */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Título de la tarjeta */
+.card h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin: 16px;
+    color: #333;
+}
+
+/* Descripción en la tarjeta */
+.card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin: 0 16px 16px;
+    color: #666;
+}
+
+/* Botón en la tarjeta */
+.btn-card {
+    display: inline-block;
+    margin: 16px;
+    padding: 10px 20px;
+    background-color: #75aadb;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en las tarjetas y el botón */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.btn-card:hover {
+    background-color: #e67e22;
+}
+/* Estilo para la sección de contacto */
+.contact-section {
+    font-family: 'Inter', sans-serif;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Contenedor del formulario y la información de contacto */
+.contact-container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Estilo del formulario de contacto */
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.btn-submit {
+    background-color: #75aadb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #e67e22;
+}
+
+/* Información de contacto adicional */
+.contact-info {
+    text-align: left;
+    max-width: 300px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #666;
+}
+/* Estilo para el footer */
+.footer {
+    background-color: #ffffff;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    font-family: 'Inter', sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+/* Logo en el footer */
+.footer-logo img {
+    width: 150px;
+}
+
+/* Información en el footer */
+.footer-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Redes sociales en el footer */
+.footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-social .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-social .social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social .social-icon img:hover {
+    opacity: 0.8;
+}
+
+/* Responsive-Design */
+
+#check {display: none;}
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+@media (max-width: 884px) {
+    .hero-content {
+        flex-direction: column;
+    }
+    .text-container {
+        width: 100%;
+        text-align: center;
+    }
+    .text-container h1 {
+        font-size: 3rem;
+    }
+    .image-container img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 678px) {
+    .text-container h1 {
+        font-size: 2rem;
+    }
+    .image-container img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 428px) {
+    nav ul {
+        display: none;
+    }
+}
+@media (max-width: 678px) {
+   .cta-button {
+    display: block;
+    flex-direction: column;
+    }
+}
+@media (max-width: 428px) {
+    .info-button{
+         display: none;
+     }
+ }
