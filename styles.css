@@ -418,6 +418,7 @@ body {
     }
     .image-container img {
          max-width: 100%;
+        margin-top: 20px;
     }
 }
 
@@ -427,6 +428,7 @@ body {
     }
     .image-container img {
         max-width: 100%;
+        margin-top: 20px;
     }
 }
 
